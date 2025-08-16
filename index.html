@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رمز الإكمال الخاص بك</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="complete.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Create Top Bar for Help & Instructions -->
+    <div class="top-bar">
+        <div class="title-text">رمز الإكمال الخاص بك</div>
+        <div class="tabs">
+            <button class="tab-button" onclick="showAlert('Home')">الصفحة الرئيسية</button>
+            <button class="tab-button" onclick="showAlert('Instructions')">التعليمات</button>
+            <button class="tab-button" onclick="showAlert('Contact')">اتصل بنا</button>
+        </div>
+    </div>
+
+    <!-- Create Title and Text Container for Instructions -->
+    <div class="title-container">
+        <h1 id="completionCode"><strong>رمز الإكمال الخاص بك</strong></h1>
+        <h2 id="completionCodeMessage" style="display: none;">يرجى ملاحظة رمز الإكمال الخاص بك لتلقي التعويض</h2>
+    </div>
+
+    <!-- Create Bottom Bar -->
+    <div class="bottom-bar">
+        <div class="title-text2">University of Dundee</div>
+    </div>
+
+
+
+    <!-- Redirect Button -->
+    <button id="linkButton" style="display: none;" disabled><strong>الدراسة انتهت. يمكنك إغلاق هذه الصفحة بأمان!</strong></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
